@@ -1,0 +1,24 @@
+.modal{
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper{
+  border: 1px solid #000;
+  padding: 20px;
+  box-shadow: 10px 5px 5px #000;
+  background-color: #fff;
+}
+
+.title{
+  margin-bottom: 20px;
+
+  text-align: center;
+  font-weight: 600;
+}
