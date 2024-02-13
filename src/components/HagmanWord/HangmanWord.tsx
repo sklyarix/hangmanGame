@@ -1,3 +1,4 @@
+import styles from './HangmanWord.module.scss'
 interface HangmanWordProps{
     letterInputUser: string[];
     wordToGuess: string
@@ -5,15 +6,7 @@ interface HangmanWordProps{
 
 const HangmanWord: React.FC<HangmanWordProps> = ({ letterInputUser, wordToGuess})=>{
 
-    return <div style={{
-        display: 'flex',
-        justifyContent: 'center',
-        gap: '.5rem',
-        fontSize: '4rem',
-        fontWeight: 'bold',
-        fontFamily: 'monospace',
-        textTransform: 'uppercase'
-    }}>
+    return <div className={styles.wrapper}>
         {
             wordToGuess.split('').map((letter, index) => {
                 return (

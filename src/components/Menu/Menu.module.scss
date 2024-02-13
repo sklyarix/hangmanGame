@@ -1,0 +1,19 @@
+.nav{
+  @apply flex flex-col items-center justify-center text-6xl;
+
+  a{
+
+    @apply p-10 text-sky-600 no-underline relative;
+    &:after{
+      content: '';
+      width: 0;
+    }
+    &:hover{
+      &:after{
+        @apply block absolute left-0 bottom-5 h-1.5 w-full bg-sky-600 ;
+        transition: 0.8s;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,62 @@
+@import './variables';
+@import './animations';
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  &:before,
+  &:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  font-family: $default-font;
+  letter-spacing: 0.5px;
+}
+
+*::-webkit-input-placeholder {
+  color: #c0c0c0;
+  opacity: 1;
+}
+*:-moz-placeholder {
+  color: #c0c0c0;
+  opacity: 1;
+}
+
+*::-moz-placeholder {
+  color: #c0c0c0;
+  opacity: 1;
+}
+
+*:-ms-input-placeholder {
+  color: #c0c0c0;
+  opacity: 1;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-size: 20px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.65;
+
+  background: linear-gradient(#bbb, transparent 1px), linear-gradient(90deg, #bbb, transparent 1px) #ebeaea;
+  background-size: 20px 20px;
+  background-position: center center;
+}
