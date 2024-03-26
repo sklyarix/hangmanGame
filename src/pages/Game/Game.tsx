@@ -58,6 +58,7 @@ function Game() {
 
     useEffect(() => {
         // Функция-обработчик события клавиатуры
+        // @ts-ignore
         const handleKeyPress = (event) => {
             // Ваш код обработки события
             if (!play) return
